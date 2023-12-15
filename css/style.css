@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: auto;
+  padding: 15px 0px 15px 0px;
+}
+
+/*
+Menu
+*/
+
+nav {
+  background-color: #000d13;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Archivo Black', sans-serif;
+  text-shadow: 0 0 4px #000;
+}
+
+.logo >span {
+ color: aqua;
+}
+.logo> span:hover {
+  color: rgb(234, 0, 255);
+}
+
+/*
+hero
+*/
+
+header {
+  background: url("../Img/bg.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 4px #000000;
+}
+
+.header-opacity {
+  background-color: #000d13;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-jumbotron > h4{
+  color: #00FFFF;
+  font-size: 2rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-jumbotron > h5 {
+  color: #fff;
+  margin: 0px;
+  padding: 5px;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.header-jumbotron > p {
+  padding: 5px;
+  margin: 0px 5px 20px 5px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  text-shadow: none;
+}
+
+.button{
+  background-color: #00FFFF ;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.button-xl {
+  font-size: 1.4rem;
+  padding: 15px;
+}
+
+/*
+statistic
+*/
+
+#statistic {
+  background-color: rgb(30, 35, 37);
+  color: #FFF;
+  font-family: 'Roboto Slab', serif;
+}
+
+#statistic > .wrapper{
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#statistic > .wrapper > div {
+  text-align: center;
+}
+
+#statistic > .wrapper > div> p{
+  font-size: 3.5rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+#statistic > .wrapper > div> p> i{
+  margin-right: 10px;
+}
+
+#statistic > .wrapper > div> small{
+  font-size: 1.5rem;
+}
+
+/*
+portfolio
+*/
+
+#portfolio{
+  background-color: #000d13;
+  color: #fff;
+}
+
+#portfolio >.wrapper{
+  padding: 50px 0px 50px 0px;
+}
+#portfolio > .wrapper > h4{
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+#portfolio > .wrapper > h4 > span{
+  color: aqua;
+}
+
+#portfolio > .wrapper> p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 50px;
+}
+
+.grid > .item {
+  border: 1px solid #6666;
+  background-color: rgb(30, 35, 37);
+  border-radius: 5px;
+  position: relative;
+}
+
+.grid > .item > img {
+  width: 15%;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.grid > .item > .item-detail {
+  padding: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 70%;
+}
+
+.grid > .item > .item-detail > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: normal;
+
+}
+
+.grid > .item > .item-detail > div> small{
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.grid > .item > .item-detail > div> a {
+  font-size: 1rem;
+  color: #333;
+}
+
+/*tentang saya*/
+#tentang-saya{
+  background-color: #EEEE;
+  color: #333;
+}
+
+#tentang-saya>.wrapper{
+  padding: 50px 0px 50px 0px;
+}
+
+#tentang-saya > .wrapper > h4{
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+#tentang-saya > .wrapper> p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#tentang-saya > .wrapper> div{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+#tentang-saya > .wrapper> div> .foto{
+  width: 30%;
+}
+
+#tentang-saya > .wrapper> div> .foto> img{
+  max-width: 100%;
+}
+#tentang-saya > .wrapper> div> .des{
+  width: 70%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#tentang-saya > .wrapper> div> .des> p{
+  margin: 0px 0px 10px 0px;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+
+#tentang-saya > .wrapper> div> .des> .sosmed> a{
+  color: rgb(0, 187, 255);
+}
+
+#tentang-saya > .wrapper> div> .des> .sosmed{
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  font-size: 1.3rem;
+
+}
